@@ -1,5 +1,5 @@
 import React from "react";
-import { DUMMY_NEWS } from "@/conts/dummy-data";
+import { DUMMY_NEWS } from "@/consts/dummy-data";
 import Link from "next/link";
 
 const NEwsPage = () => {
@@ -11,7 +11,7 @@ const NEwsPage = () => {
             key={news.id}
             className="flex-1 min-w-[calc(33.333%-20px)] w-[calc(33.333%-20px)] box-border border border-gray-300 p-2 rounded"
           >
-            <Link href={`/news/${news.id}`}>
+            <Link href={`/news/${news.slug}`}>
               <img
                 src={`/assets/images/${news.image}`}
                 alt={news.title}
